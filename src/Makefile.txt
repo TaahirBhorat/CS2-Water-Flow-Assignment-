@@ -1,0 +1,22 @@
+
+clean:
+
+	$(RM) *.class
+
+run:
+
+	java -cp src/ Flow "medsample_in.txt"
+
+run2:
+
+	java -cp src/ Flow "largesample_in.txt"
+
+docs:
+
+	javadoc -d docs/ src/*.java
+
+cleandocs:
+
+	rm -r docs/*
+
+
